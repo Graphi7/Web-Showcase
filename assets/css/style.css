@@ -1,0 +1,425 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Saira', sans-serif;
+	color: black;
+	font-size: 16px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 50px;
+	margin-bottom: 58px;
+}
+
+h3 {
+	font-size: 25px;
+	margin-bottom: 28px;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+p {
+	margin: 0;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	margin-top: 30px;
+	width: 1650px;
+	/*позиционирование по центру*/
+	margin: 10px auto; 
+}
+
+#mainHeader {
+	background: url('../images/introv2.png') no-repeat center top / cover;
+	padding-top: 57px;
+	color: #fff;
+	padding-bottom: 322px
+}
+
+#profileHeader {
+	background: url('../images/introv2.png') no-repeat center top / cover;
+	padding-top: 57px;
+	color: #fff;
+	padding-bottom: 50px
+}
+
+.header a {
+	color: #fff;
+}
+
+.logo {
+	margin-right: 69px;
+}
+
+.menu {
+	display: flex;
+}
+
+.menu li a, 
+.reg li a{
+	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing: 0.1em;
+}
+
+.menu li a:hover,
+.reg li a:hover {
+	border-bottom: 1px solid #fff;
+}
+
+.menu li,
+.reg li {
+	margin-right: 40px;
+}
+
+.reg {
+	display: flex;
+	font-size: 17px;
+	margin-left: auto;
+	letter-spacing: 0.1em;
+	justify-content: space-between;
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+}
+
+
+.intro__slider {
+	text-transform: uppercase;
+	margin-top: 216px;
+}
+
+.intro__slider p {
+	font-size: 30px;
+	letter-spacing: 0.1em;
+}
+
+.intro__slider h1 {
+	font-size: 100px;
+	margin-bottom: 19px;
+	margin-top: -9px;
+	letter-spacing: 0.02em
+}
+
+.btn {
+	display: block;
+	font-size: 17px;
+	text-align: center;
+	letter-spacing: 0.1em;
+	padding: 17px 47px;
+	border: 1px solid #fff;
+	width: 238px;
+	transition: all 0.5s ease;
+}
+
+.btn:hover {
+	background: #fff;
+    color: #000;
+}
+
+.description {
+	display: flex;
+	justify-content: space-between;
+}
+
+.description p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	text-align: justify;
+	line-height: 1.62em;
+}
+
+.desc-left, .desc-right {
+	width: 567px;
+}
+
+.abouttext {
+	width: 1000px;
+  	font-size: 30px;
+}
+
+.gallery {
+	background-color: white;
+	margin-top: 50px;
+	margin-right: 20px;
+	display: flex;
+	justify-content: space-between
+}
+
+/*.gallerytile {
+	
+}*/
+
+.gInfo {
+	transition: all 0.5s ease;
+}
+
+
+.gInfo:hover {
+	box-shadow: -10px 10px 20px rgba(0,0,10,0.5);
+	transform: scale(1.1);
+}
+
+.gText {
+	width: 800px;
+	text-align: left;
+  	font-size: 30px;
+}
+
+
+.footer-text {
+	font-size: 15px;
+	font-family: 'Open Sans', sans-serif;
+	display: flex;
+	justify-content: space-between;
+	padding: 114px 0
+}
+
+.footer-text p {
+	margin-right: 67px;
+}
+
+
+/*PROFILE*/
+.profileAvatar {
+	position: relative;
+	overflow: hidden;
+	width: 240px;
+	height: 240px;
+	margin: auto;
+	border-radius: 50%;
+	display: flex;
+
+  }
+
+  .profileAvatar img {
+	  width: 240px;
+	  height: 320px;
+  }
+  .profileTag p {
+	text-align: right;
+	margin-right: 50px;
+	font-size: 25px;
+  }
+
+  .profileHead a {
+	font-size: 25px;
+	border: 2px solid skyblue;
+	color: skyblue;
+	text-align: center;
+	align-items: right;
+	justify-content: right; /*распределение пространства между элементами*/
+	margin-left: 1650px;
+  }
+
+  .profileDescription {
+	  text-align: center;
+  }
+
+  .profileDescription p {
+	margin-top: 10px;
+	opacity: 50%;
+  }
+
+  .caseGrid {
+	display: grid;
+	justify-content:space-between;
+	margin: 0 auto;
+	grid-template-columns: repeat(auto-fit, 630px);
+  }
+  
+
+  .caseOpen img {
+	position: relative;	
+	width: 560px;
+	height: 320px;
+	margin-top: 25px;
+	margin-right: 40px;
+	margin-left: 40px;
+	box-shadow: 0 0 0 5px lightblue;
+  }
+
+  .caseOpen p {
+	  text-align: center;
+  }
+
+  .addCaseButton {
+	font-size: 19px;
+	font-weight: bold;
+	height: 55px;
+	min-width: 170px;
+  }
+
+  .addCase {
+	display: none;
+	position: fixed;
+	background-color: white;
+	height: 770px;
+	max-width: 1400px;
+	width: 100%;
+	top: 50%;
+	left: 50%;
+	right: 0;
+	bottom: 0;
+	transform: translate(-50%, -50%);
+	border: 1px solid black;
+	z-index: 9999;
+  }
+
+  #name, #description {
+	width: 100%;
+	height: 35px;
+  }
+
+  .submitButton input {
+	width: 100%;
+  }
+
+  
+  .formSelectContainer {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+  }
+  
+  .addCase:target {
+	display: block;
+  }
+  
+  .popupContainer {
+	padding-right: 10%;
+	padding-left: 10%;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+  }
+
+  .modal-overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 15;
+	background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .exitCross {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	right: 5px;
+	top: 5px;
+  }
+  .addCaseButton {
+	margin-top: 15px;
+	font-size: 25px;
+	border: 2px solid skyblue;
+	color: skyblue;
+	background-color: white;
+	text-align: center;
+	align-items: right;
+  }
+
+  .title {
+	  text-align: center;
+	  font-size: 35px;
+  }
+
+  .addCaseButton:hover,
+  .profileHead a:hover {
+	background-color: skyblue;
+	color: white;
+  }
+
+  /*case1*/
+  .caseProfileInfo {
+	position: relative;
+	overflow: hidden;
+	width: 120px;
+	height: 120px;
+	margin: 10px 25px;
+	border-radius: 50%;
+	display: flex;
+
+  }
+
+  .caseProfileHolder {
+	margin-left: 50px;
+	margin-top: 10px;
+}
+
+  .caseProfileName {
+	  margin-left: 33px;
+  }
+
+  .caseAvatar img {
+	width: 130px;
+	height: 200px;
+  }
+
+
+  .caseProfileName {
+	  text-align: left;
+  }
+
+  /*CASE PAGE*/
+
+  .casepagedesc,
+  .casepagename{
+	margin-left: 550px;
+  }
+
+  .caseProfileInfo,
+  .caseProfileName{
+	  position: fixed;
+	margin-top: 15px;
+	margin-left: 420px;
+  }
+  .caseProfileInfo{
+	margin-top: 35px;
+  }
+  
+  .casepagemedia img{
+	position: relative;	
+	justify-content: center;
+	width: 1400px;
+	margin-top: 25px;
+	margin-left: 560px;
+  }
+
+  .caseProfileHolder{
+	position: relative;
+	margin-top: 25px;
+	margin-left: 440px;
+  }
+
+  .deleteButton {
+	  position: relative;
+	  margin-top: 20px;
+	  margin-left: 1980px;
+	
+  }
+  
